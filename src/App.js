@@ -1,36 +1,20 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+//Pairing With Syed Hamza Ahmed Bukhari
+
+import React from 'react';
+import CurrentDateTime from './CurrentDateTime';
+import Name from './Name';
+import ImageComponent from './ImageComponent';
 import './App.css';
-import Profilez from './Profilez';
 
-class App extends Component {
-  render() {
-     let a=5;
-     let b=4;
-     let c=3;
-     let d=2;
 
-     /* let paragraphs = [];
-     for (let i = 1; i <= 5; i++) {
-       paragraphs.push(<p key={i}>Paragraph {i}</p>);
-     }
- */
-    return (
-      <React.Fragment>
-        
-            <p>Paragraph 1</p>
-            <p>Paragraph {d}</p>
-            <p>Paragraph {c}</p>
-            <p>Paragraph {b}</p>
-            <p>Paragraph {a}</p>
-            <Profilez name="Musfirah Fayyaz" detail="Former Fighter Pilot from Jinnah Termoinal Airport" designation="junior"/> 
-            <Profilez name="Midhat Kamal" detail="Former Programmer from Gulshan e Iqbal" designation="senior"/> 
-
-            {/*paragraphs*/}
-
-      </React.Fragment>
-    );
-  }
+function App() {
+  return (
+    <div style={{ textAlign: 'center', marginTop: '50px' }}>
+      <CurrentDateTime />
+      <Name />
+      <ImageComponent/>
+    </div>
+  );
 }
 
 export default App;

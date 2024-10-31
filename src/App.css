@@ -1,31 +1,44 @@
-.App {
-  text-align: center;
+/* App.css */
+
+body {
+  background: linear-gradient(135deg, #FF6F61 0%, #6FA3EF 100%); /* Gradient from Coral to Sky Blue */
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+h2 {
+  color: #333; /* Dark gray for text */
+  margin: 20px 0;
+  font-weight: 400;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
+div {
+  max-width: 600px;
+  margin: auto;
   padding: 20px;
-  color: white;
+  background-color: #ffffff; /* White background for content */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.App-intro {
-  font-size: large;
+img {
+  border-radius: 8px;
+  transition: transform 0.3s;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+img:hover {
+  transform: scale(1.05);
 }
 
-.senior{
-  color: indigo;
-}
-.junior{
-  color: violet;
+/* Responsive Design */
+@media (max-width: 600px) {
+  h2 {
+    font-size: 1.2em;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
